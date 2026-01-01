@@ -31,14 +31,6 @@ pipeline {
             }
         }
         
-        // Tạm thời comment test để CI pass
-        // stage('Test') {
-        //     steps {
-        //         echo 'Running tests...'
-        //         sh 'npm test || echo "Tests failed but continuing..."'
-        //     }
-        // }
-        
         stage('Build') {
             steps {
                 echo 'Building application...'
